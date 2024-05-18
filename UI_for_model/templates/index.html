@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        fieldset {
+            border: 2px solid #333;
+            border-radius: 5px;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 400px;
+            background-color: #fff;
+        }
+
+        legend {
+            font-size: 26px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        label {
+            font-size: 18px;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 20px); /* Учитываем отступы */
+            padding: 8px;
+            font-size: 16px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px; /* Отступ от поля ввода текста */
+            border-radius: 5px;
+            cursor: pointer;
+            display: block; /* Размещаем кнопку на новой строке */
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <!-- Form Name -->
+        <legend>Post2Conversion</legend>
+        
+        <!-- Text input-->
+        <div class="form-group">
+            <label><br>Post</label> 
+            <form method="post"> 
+                <input name="user_text" type="text" placeholder="Paste your post here to get info" required>
+                <button type="submit">Send</button>
+            </form> 
+        </div>
+    </fieldset>
+</body>
+</html>

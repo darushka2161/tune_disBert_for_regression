@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        fieldset {
+            border: 2px solid #333;
+            border-radius: 5px;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 400px;
+            background-color: #fff;
+        }
+
+        legend {
+            font-size: 26px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .info-block {
+            margin-top: 10px;
+        }
+
+        .info-title {
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .info-value {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .pink-box {
+            background-color: #ffc0cb7e;
+            padding: 5px 10px;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .green-box {
+            background-color:rgba(189, 255, 189, 0.614);
+            padding: 5px 10px;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: 16px;
+            color: #555;
+        }
+        
+    </style>
+</head>
+<body>
+    <fieldset>
+        <!-- Form Name -->
+        <legend>Post Info</legend>
+
+        <!-- Info Blocks -->
+        <div class="info-block">
+            <div class="info-title">Tint Analysis:</div>
+            {{ start_text | safe }}
+        </div>
+        <br> 
+        <div class="info-block">
+            <div class="info-title">Expected Conversion:</div>
+            <div class="info-value">{{ final_number }}</div>
+        </div>
+        <br> 
+        <div class="info-block">
+            <div class="info-title">Nearest Post With High Conversion:</div>
+            <div class="info-value">{{ similar_text }}</div>
+        </div>
+    </fieldset>
+</body>
+</html>
